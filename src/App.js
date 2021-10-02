@@ -82,7 +82,7 @@ const App = () => {
       const totalSupply = await contract.methods.totalSupply().call();
       setTotalSupply(totalSupply);
 
-      const price = await contract.methods.price().call();
+      const price = await contract.methods.getPrice().call();
       setPrice(price);
       const displayPrice = window.web3.utils.fromWei(price, "ether");
       setDisplayPrice(displayPrice);

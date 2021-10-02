@@ -118,13 +118,6 @@ export const contractAbi = [
     type: "function",
   },
   {
-    inputs: [],
-    name: "PRESALE_RESERVED",
-    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
     inputs: [
       { internalType: "address[]", name: "addresses", type: "address[]" },
     ],
@@ -174,6 +167,13 @@ export const contractAbi = [
     type: "function",
   },
   {
+    inputs: [],
+    name: "getPrice",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
     inputs: [
       { internalType: "address", name: "owner", type: "address" },
       { internalType: "address", name: "operator", type: "address" },
@@ -213,30 +213,9 @@ export const contractAbi = [
   },
   {
     inputs: [],
-    name: "pausePreSale",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [],
     name: "pauseSale",
     outputs: [],
     stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [{ internalType: "uint256", name: "_count", type: "uint256" }],
-    name: "presaleMintNFT",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "presaleOpen",
-    outputs: [{ internalType: "bool", name: "", type: "bool" }],
-    stateMutability: "view",
     type: "function",
   },
   {
@@ -372,13 +351,6 @@ export const contractAbi = [
   },
   {
     inputs: [],
-    name: "unpausePreSale",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [],
     name: "unpauseSale",
     outputs: [],
     stateMutability: "nonpayable",
@@ -406,6 +378,6 @@ export const contractAbi = [
     type: "function",
   },
 ];
-
 // export const contractAddress = "0xD73eE48F78da0B851892A60772acC9d0218374FE";
-export const contractAddress = "0x25A0d5147BaF36D6DE8d85EA461162810870Dd74";
+// export const contractAddress = "0x25A0d5147BaF36D6DE8d85EA461162810870Dd74";
+export const contractAddress = "0x0F671B7F5287d6ba3B015f8A591701E2D2105007";

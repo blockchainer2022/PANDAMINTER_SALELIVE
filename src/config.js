@@ -119,15 +119,6 @@ export const contractAbi = [
   },
   {
     inputs: [
-      { internalType: "address[]", name: "addresses", type: "address[]" },
-    ],
-    name: "addToPresale",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [
       { internalType: "address[]", name: "_recipients", type: "address[]" },
     ],
     name: "airdrop",
@@ -149,13 +140,6 @@ export const contractAbi = [
     inputs: [{ internalType: "address", name: "owner", type: "address" }],
     name: "balanceOf",
     outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [{ internalType: "address", name: "addr", type: "address" }],
-    name: "checkPresaleEligiblity",
-    outputs: [{ internalType: "bool", name: "", type: "bool" }],
     stateMutability: "view",
     type: "function",
   },
@@ -365,13 +349,6 @@ export const contractAbi = [
   },
   {
     inputs: [],
-    name: "whitelistPresale",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [],
     name: "withdrawAll",
     outputs: [],
     stateMutability: "nonpayable",
@@ -380,4 +357,4 @@ export const contractAbi = [
 ];
 // export const contractAddress = "0xD73eE48F78da0B851892A60772acC9d0218374FE";
 // export const contractAddress = "0x25A0d5147BaF36D6DE8d85EA461162810870Dd74";
-export const contractAddress = "0x0F671B7F5287d6ba3B015f8A591701E2D2105007";
+export const contractAddress = "0x214d3e72bd0CBd995717Ad017Ff1D361A7264d2e";
